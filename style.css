@@ -1,0 +1,295 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Montserrat", "Arial", sans-serif;
+    line-height: 1.2;
+    height: 95px;
+    overflow: hidden;
+    background-color: #1E1E1E;
+}
+
+a {
+    text-decoration: none;
+}
+
+.slides__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slides__item {
+    display: none;
+}
+
+.slides__item.active {
+    display: block;
+    width: 100%;
+    height: 95px;
+    background: -o-linear-gradient(358.38deg, #250F3C 42.99%, #100120 86.79%);
+    background: linear-gradient(91.62deg, #250F3C 42.99%, #100120 86.79%);
+    overflow: hidden;
+}
+
+.slide {
+    height: 95px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 37px;
+}
+
+.slide--third {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.slide__title {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.22;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(18.75%, #FFFFFF), color-stop(55.73%, #CD92FD), color-stop(75%, #FFFFFF));
+    background: -o-linear-gradient(top, #FFFFFF 18.75%, #CD92FD 55.73%, #FFFFFF 75%);
+    background: linear-gradient(180deg, #FFFFFF 18.75%, #CD92FD 55.73%, #FFFFFF 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.slide--second .slide__title {
+    padding-left: 2px;
+}
+
+.slide__btn-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-width: 681px;
+}
+
+.slide__btn {
+    display: block;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9836D8), to(#BC7AE4));
+    background: -o-linear-gradient(top, #9836D8 0%, #BC7AE4 100%);
+    background: linear-gradient(180deg, #9836D8 0%, #BC7AE4 100%);
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    -webkit-animation: glowing 1.3s infinite;
+            animation: glowing 1.3s infinite;
+}
+
+.slide__btn:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.slide--first .slide__btn {
+    padding: 4px 21px 5px;
+    min-height: 39px;
+    font-size: 25px;
+}
+
+.slide--second .slide__btn {
+    margin-right: 8px;
+    padding: 11px 20px 10px;
+    min-width: 257px;
+    min-height: 57px;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.slide--fourth .slide__btn {
+    position: relative;
+    margin-right: 9px;
+    padding: 17px 20px 10px;
+    min-width: 273px;
+    min-height: 57px;
+    font-size: 20px;
+}
+
+.slide--fourth .slide__btn::after {
+    position: absolute;
+    content: "";
+    width: 261px;
+    height: 47px;
+    top: 3px;
+    right: 4px;
+    border: 2px solid #8613D0;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.slide__btn-text {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.25;
+}
+
+.slide__description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.slide--second .slide__description {
+    padding: 7px 20px 0;
+}
+
+.slide--fourth .slide__description {
+    padding-top: 5px;
+    margin-right: 4px;
+}
+
+.fs600 {
+    font-weight: 600;
+}
+
+.fs700 {
+    font-weight: 700;
+}
+
+.slide__img {
+    position: absolute;
+}
+
+.slide__img--watch {
+    width: 77px;
+    height: 79px;
+    top: 50px;
+    right: 243px;
+    -webkit-transform: rotate(21.5deg);
+        -ms-transform: rotate(21.5deg);
+            transform: rotate(21.5deg);
+}
+
+.slide__img--console {
+    width: 83px;
+    height: 61px;
+    top: -31px;
+    right: 140px;
+    -webkit-transform: matrix(-0.59, 0.8, 0.8, 0.59, 0, 0);
+        -ms-transform: matrix(-0.59, 0.8, 0.8, 0.59, 0, 0);
+            transform: matrix(-0.59, 0.8, 0.8, 0.59, 0, 0);
+}
+
+.slide__img--airpods {
+    width: 85px;
+    height: 102px;
+    top: 19px;
+    right: -5px;
+}
+
+.slide__img--band-s {
+    width: 326px;
+    height: 136px;
+    top: -61px;
+    left: -68px;
+    -webkit-transform: rotate(-44.2deg);
+        -ms-transform: rotate(-44.2deg);
+            transform: rotate(-44.2deg);
+    z-index: 1;
+}
+
+.slide__img--band-m {
+    width: 352px;
+    height: 143px;
+    right: -91px;
+    top: -17px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+.slide__img--band-l {
+    width: 478px;
+    height: 196px;
+    left: -176px;
+    top: -48px;
+    -webkit-transform: rotate(-6.5deg);
+        -ms-transform: rotate(-6.5deg);
+            transform: rotate(-6.5deg);
+}
+
+.slide__img--cursor {
+    width: 23px;
+    height: 32px;
+    right: 3.33%;
+    top: 60%;
+
+    fill: #F8F8F8;
+}
+
+@-webkit-keyframes glowing {
+    0% {
+        background-color: linear-gradient(180deg, #9836D8 0%, #BC7AE4 100%);
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+
+    50% {
+        background-color: linear-gradient(180deg, #ab6ed4 0%, #d2b6e4 100%);
+        -webkit-box-shadow: 0 0 15px #c194dd;
+                box-shadow: 0 0 15px #c194dd;
+    }
+
+    100% {
+        background-color: linear-gradient(180deg, #9836D8 0%, #BC7AE4 100%);
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+}
+
+@keyframes glowing {
+    0% {
+        background-color: linear-gradient(180deg, #9836D8 0%, #BC7AE4 100%);
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+
+    50% {
+        background-color: linear-gradient(180deg, #ab6ed4 0%, #d2b6e4 100%);
+        -webkit-box-shadow: 0 0 15px #c194dd;
+                box-shadow: 0 0 15px #c194dd;
+    }
+
+    100% {
+        background-color: linear-gradient(180deg, #9836D8 0%, #BC7AE4 100%);
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+}
